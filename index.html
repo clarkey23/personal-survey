@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Survey</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mkggnndo" method="POST">
+        <label for="projects-question">What projects have been most valuable to you?</label>
+        <textarea id="projects-question" name="projects" rows="4" cols="50"></textarea>
+
+        <label for="book-question">What's a book that you have read that you would recommend generally?</label>
+        <textarea id="book-question" name="books" rows="4" cols="50"></textarea>
+
+        <label for="gift-question">What's a great gift that you have received?</label>
+        <textarea id="gift-question" name="gifts" rows="4" cols="50"></textarea>
+
+        <label for="advice-question">Is there any advice that you have heard that continues to influence?</label>
+        <textarea id="advice-question" name="advice" rows="4" cols="50"></textarea>
+
+        <label for="moon-question">Did humans go to the moon?</label>
+        <div class="radio-group">
+            <input type="radio" id="yes" name="moon" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="moon" value="no">
+            <label for="no">No</label>
+        </div>
+        
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>
